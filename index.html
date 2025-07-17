@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Le Barakaas - Restaurant</title>
+  <style>
+    body {
+      background-image: url('https://lh3.googleusercontent.com/gps-cs-s/AC9h4nq9r1Isn7mSlQl_zutCfTfkJgOCTEYD7hWuqwUBuw9WNxF5KVHRG-A313fPCaYO_-LZ35kPe8BSHUfwxTV7aL40XeQnoxQV1kPR6O8GKR6L_t_dIF80y2DSDexXMhzKl6Vlo8VK=s680-w680-h510-rw');
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      backdrop-filter: brightness(0.6);
+      opacity: 0;
+      transition: opacity 3s ease-in;
+    }
+
+    body.loaded {
+      opacity: 1;
+    }
+
+    h1 {
+      font-size: 7em;
+      margin: 30px 0 0 0;
+    }
+
+    /* Section image + texte */
+    .header-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      max-width: 90%;
+      margin: 40px 0;
+      flex-wrap: wrap;
+    }
+
+    .header-image {
+      max-width: 600px;
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+
+    .header-text {
+      font-size: 2em;
+      max-width: 500px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 40px 0;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      background-color: rgba(255, 255, 255, 0.9);
+      color: #333;
+      padding: 20px 40px;
+      border-radius: 12px;
+      font-size: 1.5em;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .buttons a:hover {
+      background-color: #f1c40f;
+      color: black;
+    }
+
+    @media (max-width: 700px) {
+      h1 {
+        font-size: 3em;
+      }
+      .header-section {
+        flex-direction: column;
+      }
+      .header-text {
+        font-size: 1.2em;
+        text-align: center;
+      }
+      .header-image {
+        max-width: 300px;
+      }
+      .buttons a {
+        font-size: 1.2em;
+        padding: 15px 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Le Barakaas</h1>
+
+  <div class="header-section">
+    <img src="BARAKAASPAPA.png" alt="Photo du gérant" class="header-image" />
+    <p class="header-text">
+      Bienvenue au Barakaas, un lieu où on rencontre des serveurs formidables comme Diego.
+    </p>
+  </div>
+
+  <div class="buttons">
+    <a href="MENU.html" target="_blank">Voir le menu</a>
+    <a href="https://bookings.zenchef.com/results?rid=374133&pid=1001" target="_blank">Réserver</a>
+    <a href="https://www.instagram.com/barakaas_/" target="_blank">Instagram</a>
+    <a href="https://www.facebook.com/p/Barakaas-61564254737934/" target="_blank">Facebook</a>
+    <a href="adresse horaire.html" target="_blank">Horaire & adresse</a>
+  </div>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      document.body.classList.add('loaded');
+    });
+  </script>
+</body>
+</html>
+
+
